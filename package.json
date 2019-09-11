@@ -1,0 +1,15 @@
+{
+  "name": "ab_runtime_v1",
+  "version": "0.1.0",
+  "description": "(version 1) AppBuilder runtime environment.",
+  "main": "index.js",
+  "repository": "https://github.com/Hiro-Nakamura/ab_runtime_v1.git",
+  "author": "Johnny Hausman <johnny@hausmanfamily.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
+  }
+}
