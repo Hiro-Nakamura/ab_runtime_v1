@@ -14,7 +14,7 @@
   },
   "scripts": {
     "boot": "npm run production",
-    "dev": "docker stack deploy -c docker-compose.dev.yml ab",
+    "developer": "docker stack deploy -c docker-compose.dev.yml ab",
     "production": "docker stack deploy -c docker-compose.yml ab"
   }
 }
