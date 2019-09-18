@@ -15,6 +15,8 @@
   "scripts": {
     "boot": "npm run production",
     "developer": "docker stack deploy -c docker-compose.dev.yml ab",
-    "production": "docker stack deploy -c docker-compose.yml ab"
+    "production": "docker stack deploy -c docker-compose.yml ab",
+    "dbInstall": "docker stack deploy -c db-init-compose.yml db",
+    "logDBInstall": "docker service logs -f db_db"
   }
 }
