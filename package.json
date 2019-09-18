@@ -11,5 +11,10 @@
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.0",
     "prettier": "^1.18.2"
+  },
+  "scripts": {
+    "boot": "npm run production",
+    "dev": "docker stack deploy -c docker-compose.dev.yml ab",
+    "production": "docker stack deploy -c docker-compose.yml ab"
   }
 }
