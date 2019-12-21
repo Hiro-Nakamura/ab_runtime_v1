@@ -14,12 +14,13 @@
   },
   "scripts": {
     "up": "npm run production",
-    "developer": "docker stack deploy -c docker-compose.dev.yml ab",
+    "developer": "docker stack deploy -c docker-compose.dev.yml ab && ./logs.js",
     "down": "docker stack rm ab",
-    "production": "docker stack deploy -c docker-compose.yml ab",
-    "dbInstall": "docker stack deploy -c db-init-compose.yml db",
-    "logDBInstall": "docker service logs -f db_db",
-    "logDB": "docker service logs -f ab_db",
-    "logServer": "docker service logs -f ab_api_sails"
+    "production": "docker stack deploy -c docker-compose.yml ab && ./logs.js",
+    "dbInstall": "docker stack deploy -c dbinit-compose.yml db"
+  },
+  "dependencies": {
+    "async": "^3.1.0",
+    "shelljs": "^0.8.3"
   }
 }
