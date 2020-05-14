@@ -1,2 +1,2 @@
 #!/bin/bash
-tar -xhjvf /tmp/app.tar.tbz
+tar -xhjf /tmp/app.tar.tbz
